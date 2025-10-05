@@ -29,13 +29,13 @@ const HeroSection = () => {
               </p>
             </div>
             <div className="content-stretch flex gap-[var(--stack-sm,8px)] items-center relative shrink-0 w-full">
-              <p className="flex-[1_0_0] font-dm-sans font-bold leading-[1.16] min-h-px min-w-px relative shrink-0 text-[39px] lg:text-[39px] md:text-[32px] sm:text-[28px] text-neutral-n1000 whitespace-pre-wrap">
+              <p className="flex-[1_0_0] font-dm-sans font-bold leading-[1.16] min-h-px min-w-px break-words hyphens-auto relative shrink-0 text-[39px] lg:text-[39px] md:text-[32px] sm:text-[26px] text-neutral-n1000 whitespace-pre-wrap">
                 Automatisierte Dokumentenerstellung
               </p>
             </div>
             <div className="box-border content-stretch flex gap-[var(--stack-sm,8px)] items-center pl-0 pr-[24px] lg:pr-[24px] md:pr-[16px] sm:pr-0 py-0 relative shrink-0 w-full">
               <p className="flex-[1_0_0] font-inter font-normal leading-[1.6] lg:leading-[1.6] md:leading-[1.5] sm:leading-[1.4] min-h-px min-w-px not-italic opacity-80 relative shrink-0 text-[16px] lg:text-[16px] md:text-[14px] sm:text-[14px] text-neutral-n800 whitespace-pre-wrap">
-                Drafto automatisiert die Erstellung standardisierter Dokumente mit Vorlagen, Platzhaltern und Datenbank‑Mapping. Im Unterschied zu klassischen Textbaustein‑Tools kombiniert Drafto einen kollaborativen Editor, KI‑gestützte Entwürfe, Versionsverlauf und vollständigen Audit‑Trail.
+                Drafto automatisiert die Erstellung standardisierter Dokumente mit Vorlagen, Platzhaltern und Datenbank‑Mapping. Im Unterschied zu klassischen Textbaustein‑Tools kombiniert Drafto einen kollaborativen Editor, KI‑gestützte Entwürfe und einen Versionsverlauf.
               </p>
             </div>
           </div>
