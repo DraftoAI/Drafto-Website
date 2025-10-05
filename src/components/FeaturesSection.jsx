@@ -27,7 +27,7 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center order-1">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full p-6" />
+              <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full max-w-[460px] max-h-[220px] sm:max-h-[240px] lg:max-h-[280px] p-4 sm:p-5" />
             </div>
           </div>
           <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
