@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import LaptopIllustration from '../assets/Laptopview.svg'
+import AISpark from '../assets/AI.svg'
 
 const HeroSection = () => {
   const [hasRequested, setHasRequested] = useState(false)
@@ -17,13 +18,7 @@ const HeroSection = () => {
         <div className="box-border content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-2xl,24px)] lg:gap-[var(--stack-2xl,24px)] md:gap-[var(--stack-xl,20px)] sm:gap-[var(--stack-lg,16px)] items-start justify-end max-w-[476px] min-h-px w-full min-w-0 pl-0 pr-[40px] lg:pr-[40px] md:pr-[20px] sm:pr-0 py-0 relative shrink-0">
           <div className="content-stretch flex flex-col gap-[var(--stack-lg,16px)] lg:gap-[var(--stack-lg,16px)] md:gap-[var(--stack-md,12px)] sm:gap-[var(--stack-sm,8px)] items-start relative shrink-0 w-full">
             <div className="bg-neutral-n0 border border-neutral-n300 border-solid box-border content-stretch flex gap-[var(--stack-sm,8px)] items-center px-[var(--stack-md,12px)] lg:px-[var(--stack-md,12px)] md:px-[var(--stack-sm,8px)] sm:px-[var(--stack-xs,4px)] py-[var(--inset-sm,8px)] lg:py-[var(--inset-sm,8px)] md:py-[var(--inset-xs,4px)] sm:py-[var(--inset-xs,4px)] relative rounded-[var(--border-radius-2xl,20px)] lg:rounded-[var(--border-radius-2xl,20px)] md:rounded-[var(--border-radius-lg,12px)] sm:rounded-[var(--border-radius-md,8px)] shrink-0 shadow-sm">
-              <div className="relative shrink-0 size-[20px] lg:size-[20px] md:size-[18px] sm:size-[16px]">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 2l1.5 3.5L15 6l-2.5 2.5L13 12l-3-1.5L7 12l.5-3.5L5 6l3.5-.5L10 2z" fill="#6099f7"/>
-                  <path d="M6 8l1 1.5" stroke="#6099f7" strokeWidth="1" strokeLinecap="round"/>
-                  <path d="M14 8l-1 1.5" stroke="#6099f7" strokeWidth="1" strokeLinecap="round"/>
-                </svg>
-              </div>
+              <img src={AISpark} alt="AI" className="relative shrink-0 h-5 w-5 md:h-4 md:w-4 sm:h-4 sm:w-4" />
               <p className="font-inter font-medium leading-[1.6] not-italic relative shrink-0 text-[16px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-neutral-n800 text-center">
                 Daten rein, Vertrag raus
               </p>

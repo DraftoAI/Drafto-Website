@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import AISpark from '../assets/AI.svg'
 
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState(-1)
@@ -32,13 +33,7 @@ const FAQSection = () => {
         <div className="box-border content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-2xl,24px)] lg:gap-[var(--stack-2xl,24px)] md:gap-[var(--stack-xl,20px)] sm:gap-[var(--stack-lg,16px)] items-start justify-end max-w-[476px] lg:max-w-[476px] md:max-w-[400px] sm:max-w-[350px] min-h-px min-w-[360px] lg:min-w-[360px] md:min-w-[320px] sm:min-w-[280px] pl-0 pr-[40px] lg:pr-[40px] md:pr-[20px] sm:pr-0 py-0 relative shrink-0">
           <div className="content-stretch flex flex-col gap-[var(--stack-lg,16px)] items-start relative shrink-0 w-full">
             <div className="bg-neutral-n0 border border-neutral-n300 shadow-sm box-border content-stretch flex items-center gap-[12px] px-[20px] py-[10px] relative rounded-full shrink-0">
-              <div className="relative shrink-0 size-[24px]">
-                <svg width="24" height="24" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 2l1.5 3.5L15 6l-2.5 2.5L13 12l-3-1.5L7 12l.5-3.5L5 6l3.5-.5L10 2z" fill="#6099f7"/>
-                  <path d="M6 8l1 1.5" stroke="#6099f7" strokeWidth="1" strokeLinecap="round"/>
-                  <path d="M14 8l-1 1.5" stroke="#6099f7" strokeWidth="1" strokeLinecap="round"/>
-                </svg>
-              </div>
+              <img src={AISpark} alt="AI" className="h-5 w-5" />
               <p className="font-dm-sans font-medium leading-[1.3] not-italic relative shrink-0 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px] text-neutral-n800 text-center">
                 FAQ
               </p>

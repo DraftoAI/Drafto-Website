@@ -11,10 +11,10 @@ const Footer = () => {
           </div>
         </div>
         <div className="box-border content-center flex flex-wrap gap-[var(--inline-2xl,24px)] items-center justify-center px-0 py-[var(--inset-xl,20px)] relative shrink-0 w-full lg:flex-row md:flex-col sm:flex-col">
-          <p className="flex-[1_0_0] font-inter font-normal leading-[1.4] min-h-px min-w-px not-italic relative shrink-0 text-[14px] lg:text-[14px] md:text-[12px] sm:text-[12px] text-neutral-n700 whitespace-pre-wrap text-center lg:text-left md:text-center sm:text-center">
+          <p className="font-inter font-normal leading-[1.4] text-[14px] text-neutral-n700 text-center order-2 lg:order-1 w-full lg:w-auto">
             ©2025 Drafto - kontakt@drafto.de
           </p>
-          <div className="content-stretch flex gap-[24px] lg:gap-[24px] md:gap-[16px] sm:gap-[12px] items-center justify-center relative shrink-0">
+          <div className="flex gap-[24px] lg:gap-[24px] md:gap-[16px] sm:gap-[12px] items-center justify-center order-1 lg:order-2 w-full lg:w-auto">
             <div className="content-stretch flex items-start relative shrink-0">
               <div className="content-stretch flex gap-[var(--inline-xs,4px)] items-center relative shrink-0">
                 <div className="content-stretch flex items-start overflow-clip relative shrink-0">
