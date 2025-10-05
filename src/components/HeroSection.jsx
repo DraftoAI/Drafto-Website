@@ -13,8 +13,8 @@ const HeroSection = () => {
   }, [])
   return (
     <div id="hero" className="bg-neutral-n0 box-border content-stretch flex flex-col gap-[var(--section-spacing-xl,80px)] lg:gap-[var(--section-spacing-xl,80px)] md:gap-[var(--section-spacing-lg,60px)] sm:gap-[var(--section-spacing-md,48px)] items-center overflow-clip pb-[var(--section-spacing-xl,80px)] lg:pb-[var(--section-spacing-xl,80px)] md:pb-[var(--section-spacing-lg,60px)] sm:pb-[var(--section-spacing-md,48px)] pt-[var(--section-spacing-xl,80px)] lg:pt-[var(--section-spacing-xl,80px)] md:pt-[var(--section-spacing-lg,60px)] sm:pt-[var(--section-spacing-md,48px)] px-[var(--inset-3xl,32px)] lg:px-[var(--inset-3xl,32px)] md:px-[var(--inset-xl,20px)] sm:px-[var(--inset-lg,16px)] relative shrink-0 w-full max-w-[1440px]">
-      <div className="content-start flex flex-wrap gap-[var(--section-spacing-md,48px)] lg:gap-[var(--section-spacing-md,48px)] md:gap-[var(--section-spacing-lg,60px)] sm:gap-[var(--section-spacing-md,48px)] items-start max-w-[1204px] relative shrink-0 w-full">
-        <div className="box-border content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-2xl,24px)] lg:gap-[var(--stack-2xl,24px)] md:gap-[var(--stack-xl,20px)] sm:gap-[var(--stack-lg,16px)] items-start justify-end max-w-[476px] min-h-px min-w-[360px] pl-0 pr-[40px] lg:pr-[40px] md:pr-[20px] sm:pr-0 py-0 relative shrink-0">
+      <div className="content-start grid grid-cols-1 lg:grid-cols-2 gap-[var(--section-spacing-md,48px)] lg:gap-[var(--section-spacing-md,48px)] md:gap-[var(--section-spacing-lg,60px)] sm:gap-[var(--section-spacing-sm,32px)] items-start max-w-[1204px] relative shrink-0 w-full">
+        <div className="box-border content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-2xl,24px)] lg:gap-[var(--stack-2xl,24px)] md:gap-[var(--stack-xl,20px)] sm:gap-[var(--stack-lg,16px)] items-start justify-end max-w-[476px] min-h-px w-full min-w-0 pl-0 pr-[40px] lg:pr-[40px] md:pr-[20px] sm:pr-0 py-0 relative shrink-0">
           <div className="content-stretch flex flex-col gap-[var(--stack-lg,16px)] lg:gap-[var(--stack-lg,16px)] md:gap-[var(--stack-md,12px)] sm:gap-[var(--stack-sm,8px)] items-start relative shrink-0 w-full">
             <div className="bg-neutral-n0 border border-neutral-n300 border-solid box-border content-stretch flex gap-[var(--stack-sm,8px)] items-center px-[var(--stack-md,12px)] lg:px-[var(--stack-md,12px)] md:px-[var(--stack-sm,8px)] sm:px-[var(--stack-xs,4px)] py-[var(--inset-sm,8px)] lg:py-[var(--inset-sm,8px)] md:py-[var(--inset-xs,4px)] sm:py-[var(--inset-xs,4px)] relative rounded-[var(--border-radius-2xl,20px)] lg:rounded-[var(--border-radius-2xl,20px)] md:rounded-[var(--border-radius-lg,12px)] sm:rounded-[var(--border-radius-md,8px)] shrink-0 shadow-sm">
               <div className="relative shrink-0 size-[20px] lg:size-[20px] md:size-[18px] sm:size-[16px]">
@@ -52,7 +52,7 @@ const HeroSection = () => {
             )}
           </div>
         </div>
-        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-sm,8px)] items-center min-h-px min-w-[360px] lg:min-w-[360px] md:min-w-[320px] sm:min-w-[280px] relative shrink-0">
+        <div className="content-stretch flex flex-[1_0_0] flex-col gap-[var(--stack-sm,8px)] items-center min-h-px w-full min-w-0 relative shrink-0">
           <div className="h-[320px] lg:h-[340px] md:h-[260px] sm:h-[220px] relative shrink-0 w-full max-w-[520px] lg:max-w-[540px] md:max-w-[440px] sm:max-w-[360px] rounded-[var(--border-radius-xl,16px)] lg:rounded-[var(--border-radius-xl,16px)] md:rounded-[var(--border-radius-lg,12px)] sm:rounded-[var(--border-radius-md,8px)] flex items-center justify-center overflow-hidden bg-transparent">
             <img src={LaptopIllustration} alt="Apple MacBook Pro 13" className="w-full h-full object-contain" />
           </div>
