@@ -23,16 +23,14 @@ const FeaturesSection = () => {
       {/* Feature Cards */}
       <div className="flex flex-col w-full max-w-[1200px] gap-24 md:gap-28 lg:gap-32">
 
-        {/* Card 1 - Vorlagenerstellung */}
+        {/* 1. Vorlagenerstellung (Bild links, Text rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          {/* Bild */}
-          <div className="flex justify-center">
+          <div className="flex justify-center order-1">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
               <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full p-6" />
             </div>
           </div>
-          {/* Text */}
-          <div className="flex flex-col gap-4 border border-neutral-n200 rounded-2xl p-6 shadow-sm">
+          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000 underline decoration-primary-pr600 underline-offset-4">
               Vorlagenerstellung
             </h3>
@@ -44,14 +42,9 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Card 2 - Dokumentenerstellung */}
+        {/* 2. Dokumentenerstellung (Text links, Bild rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
-            <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full p-6" />
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 border border-neutral-n200 rounded-2xl p-6 shadow-sm">
+          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000 underline decoration-primary-pr600 underline-offset-4">
               Dokumentenerstellung
             </h3>
@@ -60,16 +53,21 @@ const FeaturesSection = () => {
               und generiert ein vorausgefülltes Dokument im Editor.
             </p>
           </div>
+          <div className="flex justify-center order-1 lg:order-2">
+            <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
+              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full p-6" />
+            </div>
+          </div>
         </div>
 
-        {/* Card 3 - Dokumenteneditor */}
+        {/* 3. Dokumenteneditor (Bild links, Text rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
+          <div className="flex justify-center order-1">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
               <img src={ImgDokumenteneditor} alt="Dokumenteneditor" className="object-contain w-full p-6" />
             </div>
           </div>
-          <div className="flex flex-col gap-4 border border-neutral-n200 rounded-2xl p-6 shadow-sm">
+          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000 underline decoration-primary-pr600 underline-offset-4">
               Dokumenteneditor
             </h3>
@@ -81,14 +79,9 @@ const FeaturesSection = () => {
           </div>
         </div>
 
-        {/* Card 4 - Datenschutz */}
+        {/* 4. Datenschutz (Text links, Bild rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex justify-center">
-            <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDatenschutz} alt="Datenschutz" className="object-contain w-full p-6" />
-            </div>
-          </div>
-          <div className="flex flex-col gap-4 border border-neutral-n200 rounded-2xl p-6 shadow-sm">
+          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000 underline decoration-primary-pr600 underline-offset-4">
               Datenschutz
             </h3>
@@ -97,6 +90,11 @@ const FeaturesSection = () => {
               Boundary, Privacy-by-Design, Azure OpenAI DataZone und umfassenden Betroffenenrechten wird DSGVO-Komfort
               im Kanzlei-Tagesbetrieb greifbar.
             </p>
+          </div>
+          <div className="flex justify-center order-1 lg:order-2">
+            <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
+              <img src={ImgDatenschutz} alt="Datenschutz" className="object-contain w-full p-6" />
+            </div>
           </div>
         </div>
 
