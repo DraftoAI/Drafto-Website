@@ -30,7 +30,7 @@ const HeroSection = () => {
             </div>
             <div className="content-stretch flex gap-[var(--stack-sm,8px)] items-center relative shrink-0 w-full">
               <p className="flex-[1_0_0] font-dm-sans font-bold leading-[1.16] min-h-px min-w-px break-words hyphens-auto relative shrink-0 text-[39px] lg:text-[39px] md:text-[32px] sm:text-[26px] text-neutral-n1000 whitespace-pre-wrap">
-                Automatisierte Dokumentenerstellung
+                Automatisierte Dokumenten<wbr/>erstellung
               </p>
             </div>
             <div className="box-border content-stretch flex gap-[var(--stack-sm,8px)] items-center pl-0 pr-[24px] lg:pr-[24px] md:pr-[16px] sm:pr-0 py-0 relative shrink-0 w-full">
