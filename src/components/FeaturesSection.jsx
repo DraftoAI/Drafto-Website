@@ -55,7 +55,7 @@ const FeaturesSection = () => {
           </div>
           <div className="flex justify-center order-1 lg:order-2">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full max-w-[520px] max-h-[270px] lg:max-h-[300px] p-2 sm:p-3" />
+              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full max-w-[520px] max-h-[280px] lg:max-h-[300px] p-1 sm:p-2 transform scale-[1.08]" />
             </div>
           </div>
         </div>
