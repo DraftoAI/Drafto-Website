@@ -27,7 +27,7 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center order-1">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full max-w-[500px] max-h-[260px] sm:max-h-[260px] lg:max-h-[280px] p-3 sm:p-4" />
+              <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full max-w-[520px] max-h-[270px] lg:max-h-[300px] p-2 sm:p-3" />
             </div>
           </div>
           <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
@@ -55,7 +55,7 @@ const FeaturesSection = () => {
           </div>
           <div className="flex justify-center order-1 lg:order-2">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full p-6" />
+              <img src={ImgDokumentenerstellung} alt="Dokumentenerstellung" className="object-contain w-full max-h-[270px] lg:max-h-[300px] p-3" />
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@ const FeaturesSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="flex justify-center order-1">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDokumenteneditor} alt="Dokumenteneditor" className="object-contain w-full p-6" />
+              <img src={ImgDokumenteneditor} alt="Dokumenteneditor" className="object-contain w-full max-h-[270px] lg:max-h-[300px] p-3" />
             </div>
           </div>
           <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
@@ -93,7 +93,7 @@ const FeaturesSection = () => {
           </div>
           <div className="flex justify-center order-1 lg:order-2">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
-              <img src={ImgDatenschutz} alt="Datenschutz" className="object-contain w-full p-6" />
+              <img src={ImgDatenschutz} alt="Datenschutz" className="object-contain w-full max-h-[270px] lg:max-h-[300px] p-3" />
             </div>
           </div>
         </div>
