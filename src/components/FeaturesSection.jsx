@@ -30,13 +30,13 @@ const FeaturesSection = () => {
               <img src={ImgVorlagenerstellung} alt="Vorlagenerstellung" className="object-contain w-full max-w-[520px] max-h-[270px] lg:max-h-[300px] p-2 sm:p-3" />
             </div>
           </div>
-          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
+          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px] transition-all duration-200 ease-out md:hover:-translate-y-1 md:hover:shadow-lg md:hover:border-primary-pr500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-pr500 active:scale-[0.99]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000">
               Vorlagenerstellung
             </h3>
             <p className="text-neutral-n800 opacity-80 text-[16px] leading-[1.6] text-justify">
-              Vorausgefüllte Verträge können hochgeladen werden. Unser KI-Agent erkennt alle Platzhalter
-              und ordnet sie zu den passenden Datenbankelementen zu. Diese Vorlage kann jetzt in der Vertragserstellung
+              Vorausgefüllte Dokumente können hochgeladen werden. Unser KI-Agent erkennt alle Platzhalter
+              und ordnet sie zu den passenden Datenbankelementen zu. Diese Vorlage kann jetzt in der Dokumentenerstellung
               genutzt werden.
             </p>
           </div>
@@ -44,13 +44,14 @@ const FeaturesSection = () => {
 
         {/* 2. Dokumentenerstellung (Text links, Bild rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
+          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w-full max-w-[520px] min-h-[280px] lg:min-h-[300px] transition-all duration-200 ease-out md:hover:-translate-y-1 md:hover:shadow-lg md:hover:border-primary-pr500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-pr500 active:scale-[0.99]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000">
               Dokumentenerstellung
             </h3>
             <p className="text-neutral-n800 opacity-80 text-[16px] leading-[1.6] text-justify">
-              Der KI-Agent erkennt in einem Schriftsatz automatisch die benötigte Vorlage und den zugehörigen Mandanten
-              und generiert ein vorausgefülltes Dokument im Editor.
+            Der KI-Agent erkennt auf Basis des gegebenen Kontexts die benötigte Vorlage sowie den passenden
+             Mandanten und generiert im Editor ein vorausgefülltes Dokument. Alternativ kann die Vorlage manuell gewählt werden – 
+             dann nur noch den Mandanten auswählen und das Dokument ist ausgefüllt und im Editor individuell bearbeitbar.
             </p>
           </div>
           <div className="flex justify-center order-1 lg:order-2">
@@ -67,28 +68,28 @@ const FeaturesSection = () => {
               <img src={ImgDokumenteneditor} alt="Dokumenteneditor" className="object-contain w-full max-h-[270px] lg:max-h-[300px] p-3" />
             </div>
           </div>
-          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
+          <div className="flex flex-col gap-4 order-2 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px] transition-all duration-200 ease-out md:hover:-translate-y-1 md:hover:shadow-lg md:hover:border-primary-pr500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-pr500 active:scale-[0.99]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000">
               Dokumenteneditor
             </h3>
             <p className="text-neutral-n800 opacity-80 text-[16px] leading-[1.6] text-justify">
               Mit dem Dokumenteneditor von Drafto erstellen und bearbeiten Sie Verträge direkt im Browser –
               strukturiert, schnell und fehlerarm. Vorlagen mit Platzhaltern befüllen sich automatisch aus dem
-              Mandantenstamm; Baustein- und Klauselbibliothek sorgt für konsistente Formulierungen.
+              Mandantenstamm, Bausteine können auch individuell angelegt und eingefügt werden.
             </p>
           </div>
         </div>
 
         {/* 4. Datenschutz (Text links, Bild rechts) */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px]">
+          <div className="flex flex-col gap-4 order-2 lg:order-1 border border-neutral-n200 rounded-2xl p-6 shadow-sm w/full max-w-[520px] min-h-[280px] lg:min-h-[300px] transition-all duration-200 ease-out md:hover:-translate-y-1 md:hover:shadow-lg md:hover:border-primary-pr500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary-pr500 active:scale-[0.99]">
             <h3 className="font-dm-sans font-bold text-[28px] text-neutral-n1000">
               Datenschutz
             </h3>
             <p className="text-neutral-n800 opacity-80 text-[16px] leading-[1.6] text-justify">
-              Drafto nutzt Microsoft Azure als Fundament für Datenschutz und Compliance von Anfang an: Mit EU Data
-              Boundary, Privacy-by-Design, Azure OpenAI DataZone und umfassenden Betroffenenrechten wird DSGVO-Komfort
-              im Kanzlei-Tagesbetrieb greifbar.
+            Drafto nutzt Microsoft Azure als Fundament und erfüllt die Anforderungen der DSGVO.
+            Die Verarbeitung findet ausschließlich in europaischen Microsoft-Azure-Rechenzentren statt. 
+            Alle Daten sind verschlüsselt und der Zugriff ist streng rollenbasiert.
             </p>
           </div>
           <div className="flex justify-center order-1 lg:order-2">
