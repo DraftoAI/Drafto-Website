@@ -20,7 +20,7 @@ const HeroSection = () => {
             <div className="bg-neutral-n0 border border-neutral-n300 border-solid box-border content-stretch flex gap-[var(--stack-sm,8px)] items-center px-[var(--stack-md,12px)] lg:px-[var(--stack-md,12px)] md:px-[var(--stack-sm,8px)] sm:px-[var(--stack-xs,4px)] py-[var(--inset-sm,8px)] lg:py-[var(--inset-sm,8px)] md:py-[var(--inset-xs,4px)] sm:py-[var(--inset-xs,4px)] relative rounded-[var(--border-radius-2xl,20px)] lg:rounded-[var(--border-radius-2xl,20px)] md:rounded-[var(--border-radius-lg,12px)] sm:rounded-[var(--border-radius-md,8px)] shrink-0 shadow-sm">
               <img src={AISpark} alt="AI" className="relative shrink-0 h-5 w-5 md:h-4 md:w-4 sm:h-4 sm:w-4" />
               <p className="font-inter font-medium leading-[1.6] not-italic relative shrink-0 text-[16px] lg:text-[16px] md:text-[14px] sm:text-[12px] text-neutral-n800 text-center">
-                Daten rein, Vertrag raus
+                Verträge in Minuten statt Stunden
               </p>
             </div>
             <div className="content-stretch flex gap-[var(--stack-sm,8px)] items-center relative shrink-0 w-full">
