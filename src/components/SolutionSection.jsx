@@ -23,16 +23,16 @@ const SolutionSection = () => {
 
       {/* Four Steps as responsive cards (2x2 as in Figma) */}
       <div className="w-full max-w-[1204px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 lg:gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
           {[
-            { step: 1, title: 'Vorlage anlegen', desc: 'Dokument hochladen, Platzhalter erkennen und Felder zuordnen.' },
-            { step: 2, title: 'Daten verknüpfen', desc: 'Platzhalter mit Mandanten‑ und Falldaten verbinden.' },
-            { step: 3, title: 'Dokument erstellen', desc: 'Mit einem Klick vorausgefülltes Dokument generieren.' },
-            { step: 4, title: 'Prüfen & versenden', desc: 'Im Editor finalisieren, freigeben und exportieren.' },
+            { step: 1, title: 'Vorlage wählen', desc: 'Passende Vorlage auswählen, oder Kontext hochladen und der KI-Agent findet die passende Vorlage.' },
+            { step: 2, title: 'Mandantendaten übernommen', desc: 'Vorlage wird automatisch mit den Mandantendaten befüllt und in den Editor geladen.' },
+            { step: 3, title: 'Entwurf anpassen', desc: 'Der Entwurf kann individuell im Dokumenteneditor angepasst werden.' },
+            { step: 4, title: 'Prüfen & versenden', desc: 'Finalisieren, freigeben und exportieren als Word-Dokument oder PDF.' },
           ].map(({ step, title, desc }) => (
             <div
               key={step}
-              className="border border-neutral-n200 rounded-2xl p-5 md:p-6 shadow-sm bg-neutral-n0 flex flex-col gap-4 min-h-[168px] md:min-h-[184px] lg:min-h-[200px] md:hover:-translate-y-[2px] md:hover:shadow-md transition-all duration-200"
+              className="border border-neutral-n200 rounded-xl p-4 md:p-4 shadow-sm bg-neutral-n0 flex flex-col gap-3 min-h-[150px] md:min-h-[160px] lg:min-h-[168px] md:hover:-translate-y-[2px] md:hover:shadow-md transition-all duration-200"
             >
               {/* Header row: title + step badge */}
               <div className="flex items-center gap-3">
@@ -47,28 +47,28 @@ const SolutionSection = () => {
               {/* Optional image for step 1 */}
               {step === 1 && (
                 <div className="w-full flex items-center justify-center">
-                  <img src={SchrittEins} alt="Schritt 1: Vorlage anlegen" className="w-full max-w-[340px] md:max-w-[360px] h-auto object-contain" />
+                  <img src={SchrittEins} alt="Schritt 1: Vorlage anlegen" className="w-full max-w-[300px] md:max-w-[320px] h-auto object-contain" />
                 </div>
               )}
 
               {/* Optional image for step 2 */}
               {step === 2 && (
                 <div className="w-full flex items-center justify-center">
-                  <img src={SchrittZwei} alt="Schritt 2: Daten verknüpfen" className="w-full max-w-[340px] md:max-w-[360px] h-auto object-contain" />
+                  <img src={SchrittZwei} alt="Schritt 2: Daten verknüpfen" className="w-full max-w-[300px] md:max-w-[320px] h-auto object-contain" />
                 </div>
               )}
 
               {/* Optional image for step 3 */}
               {step === 3 && (
                 <div className="w-full flex items-center justify-center">
-                  <img src={SchrittDrei} alt="Schritt 3: Dokument erstellen" className="w-full max-w-[340px] md:max-w-[360px] h-auto object-contain" />
+                  <img src={SchrittDrei} alt="Schritt 3: Dokument erstellen" className="w-full max-w-[300px] md:max-w-[320px] h-auto object-contain" />
                 </div>
               )}
 
               {/* Optional image for step 4 */}
               {step === 4 && (
                 <div className="w-full flex items-center justify-center">
-                  <img src={SchrittVier} alt="Schritt 4: Prüfen & versenden" className="w-full max-w-[340px] md:max-w-[360px] h-auto object-contain" />
+                  <img src={SchrittVier} alt="Schritt 4: Prüfen & versenden" className="w-full max-w-[300px] md:max-w-[320px] h-auto object-contain" />
                 </div>
               )}
 
