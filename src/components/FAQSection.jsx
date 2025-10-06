@@ -6,8 +6,8 @@ const FAQSection = () => {
 
   const faqs = [
     {
-      question: "Was ist Drafto und wodurch unterscheidet es sich?",
-      answer: "Drafto automatisiert die Erstellung standardisierter Dokumente mit Vorlagen, Platzhaltern und Datenbank‑Mapping. Im Unterschied zu klassischen Textbaustein‑Tools kombiniert Drafto einen kollaborativen Editor, KI‑gestützte Entwürfe, Versionsverlauf und vollständigen Audit‑Trail."
+      question: "Was ist Drafto?",
+      answer: "Drafto automatisiert die Erstellung standardisierter Dokumente mit Vorlagen, Platzhaltern und Datenbank‑Mapping. Im Unterschied zu klassischen Textbaustein‑Tools kombiniert Drafto einen kollaborativen Editor, KI‑gestützte Entwürfe und Versionsverläufe."
     },
     {
       question: "Wie funktioniert das KI-Feature?",
@@ -19,7 +19,7 @@ const FAQSection = () => {
     },
     {
       question: "Wie kann ich Drafto integrieren?",
-      answer: "Drafto bietet verschiedene Integrationsmöglichkeiten über APIs und Webhooks. Sie können es in bestehende Kanzlei-Software integrieren oder als eigenständige Lösung nutzen. Unser Support-Team hilft gerne bei der Einrichtung."
+      answer: "Drafto lässt sich per API und Webhooks in bestehende Kanzleisoftware einbinden. Alternativ, ohne Schnittstelle können Mandantendaten sicher hochgeladen werden (z. B. CSV/Excel) und sofort genutzt werden. Auf Wunsch unterstützen wir Sie bei der Einrichtung."
     }
   ]
 
@@ -80,7 +80,7 @@ const FAQSection = () => {
                 </div>
                 {openFAQ === index && (
                   <div className="box-border content-stretch flex gap-[10px] items-start pb-[var(--stack-xl,20px)] pl-0 pr-[var(--inline-xl,20px)] pt-0 relative shrink-0 w-full">
-                    <p className="flex-[1_0_0] font-inter font-normal leading-[1.6] min-h-px min-w-px not-italic relative shrink-0 text-[16px] text-neutral-n800 whitespace-pre-wrap">
+                    <p className="flex-[1_0_0] font-inter font-normal leading-[1.6] min-h-px min-w-px not-italic relative shrink-0 text-[16px] text-neutral-n800 whitespace-pre-wrap text-justify">
                       {faq.answer}
                     </p>
                   </div>
