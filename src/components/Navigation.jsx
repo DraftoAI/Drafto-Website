@@ -111,22 +111,19 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a 
-                href="#how-it-works"
-                onClick={(e) => handleNavClick(e, 'how-it-works')}
+                href="#/how-it-works"
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Unsere Lösung
               </a>
               <a 
-                href="#features"
-                onClick={(e) => handleNavClick(e, 'features')}
+                href="#/features"
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Funktionalitäten
               </a>
               <a 
-                href="#faq"
-                onClick={(e) => handleNavClick(e, 'faq')}
+                href="#/faq"
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 FAQ
@@ -172,22 +169,19 @@ const Navigation = () => {
         <div className="md:hidden border-t border-neutral-n200 bg-neutral-n0">
           <div className="px-4 py-3 space-y-2">
             <a 
-              href="#how-it-works" 
-              onClick={(e) => { handleNavClick(e, 'how-it-works'); setMenuOpen(false) }} 
+              href="#/how-it-works" 
               className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
             >
               Unsere Lösung
             </a>
             <a 
-              href="#features" 
-              onClick={(e) => { handleNavClick(e, 'features'); setMenuOpen(false) }} 
+              href="#/features" 
               className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
             >
               Funktionalitäten
             </a>
             <a 
-              href="#faq" 
-              onClick={(e) => { handleNavClick(e, 'faq'); setMenuOpen(false) }} 
+              href="#/faq" 
               className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
             >
               FAQ
