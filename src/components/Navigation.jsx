@@ -132,11 +132,7 @@ const Navigation = () => {
                 FAQ
               </a>
               <a 
-                href="/datenschutz"
-                onClick={(e) => {
-                  e.preventDefault()
-                  window.location.href = '/datenschutz'
-                }}
+                href="#/datenschutz"
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Datenschutz
@@ -197,12 +193,7 @@ const Navigation = () => {
               FAQ
             </a>
             <a 
-              href="/datenschutz" 
-              onClick={(e) => { 
-                e.preventDefault()
-                window.location.href = '/datenschutz'
-                setMenuOpen(false) 
-              }} 
+              href="#/datenschutz" 
               className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
             >
               Datenschutz

@@ -29,8 +29,7 @@ const Footer = () => {
             ©2025 Drafto - kontakt@drafto.de
           </p>
           <a 
-            href="/datenschutz" 
-            onClick={handleDatenschutzClick}
+            href="#/datenschutz" 
             className="font-inter font-normal leading-[1.4] text-[14px] text-neutral-n700 hover:text-primary-pr600 transition-colors duration-200"
           >
             Datenschutz

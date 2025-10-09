@@ -94,8 +94,7 @@ const FAQSection = () => {
                       </p>
                       {faq.hasLink && (
                         <a 
-                          href="/datenschutz" 
-                          onClick={handleDatenschutzClick}
+                          href="#/datenschutz" 
                           className="inline-flex items-center gap-2 text-primary-pr600 hover:text-primary-pr700 font-medium text-[16px] transition-colors duration-200"
                         >
                           Hier sehen Sie mehr über den Datenschutz

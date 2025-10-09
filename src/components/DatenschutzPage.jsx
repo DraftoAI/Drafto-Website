@@ -306,15 +306,15 @@ const DatenschutzPage = () => {
         <div className="container mx-auto px-6 relative z-10">
           {/* Back Button */}
           <div className="mb-8">
-            <Link 
-              to="/" 
+            <a 
+              href="#/" 
               className="inline-flex items-center gap-2 bg-white bg-opacity-20 hover:bg-opacity-30 px-4 py-2 rounded-lg backdrop-blur-sm transition-all duration-200 hover:scale-105"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
               </svg>
               Zurück zur Startseite
-            </Link>
+            </a>
           </div>
           
           <h1 className="text-4xl md:text-5xl font-bold text-center mb-6 text-shadow-lg">
