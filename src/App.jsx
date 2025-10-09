@@ -1,15 +1,26 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { Analytics } from '@vercel/analytics/react'
 import Navigation from './components/Navigation'
 import LandingPage from './components/LandingPage'
+import DatenschutzPage from './components/DatenschutzPage'
 
 function App() {
   return (
-    <div className="min-h-screen bg-neutral-n0">
-      <Navigation />
-      <LandingPage />
-      <Analytics />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-neutral-n0">
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Navigation />
+              <LandingPage />
+            </>
+          } />
+          <Route path="/datenschutz" element={<DatenschutzPage />} />
+        </Routes>
+        <Analytics />
+      </div>
+    </Router>
   )
 }
 

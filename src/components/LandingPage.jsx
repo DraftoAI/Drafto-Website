@@ -3,6 +3,7 @@ import HeroSection from './HeroSection'
 import SolutionSection from './SolutionSection'
 import SeoContentSection from './SeoContentSection'
 import FeaturesSection from './FeaturesSection'
+import BenefitsSection from './BenefitsSection'
 import FAQSection from './FAQSection'
 import Footer from './Footer'
 
@@ -10,6 +11,7 @@ const LandingPage = () => {
   return (
     <div className="bg-neutral-n0 content-stretch flex flex-col items-center overflow-clip relative shrink-0 w-full">
       <HeroSection />
+      <BenefitsSection />
       <SolutionSection />
       <SeoContentSection />
       <FeaturesSection />

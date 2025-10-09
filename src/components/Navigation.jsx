@@ -1,9 +1,29 @@
 import React, { useEffect, useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false) // demo modal
   const [menuOpen, setMenuOpen] = useState(false) // mobile sidebar/menu
   const [hasRequested, setHasRequested] = useState(false)
+  const location = useLocation()
+  
+  // Check if we're on the datenschutz page
+  const isDatenschutzPage = location.pathname === '/datenschutz'
+  
+  // Handle navigation clicks
+  const handleNavClick = (e, targetId) => {
+    e.preventDefault()
+    if (isDatenschutzPage) {
+      // If on datenschutz page, navigate to homepage first
+      window.location.href = `/#${targetId}`
+    } else {
+      // If on homepage, scroll to section
+      const element = document.getElementById(targetId)
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' })
+      }
+    }
+  }
 
   useEffect(() => {
     const onKey = (e) => {
@@ -91,22 +111,35 @@ const Navigation = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               <a 
-                href="#how-it-works" 
+                href="#how-it-works"
+                onClick={(e) => handleNavClick(e, 'how-it-works')}
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Unsere Lösung
               </a>
               <a 
-                href="#features" 
+                href="#features"
+                onClick={(e) => handleNavClick(e, 'features')}
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 Funktionalitäten
               </a>
               <a 
-                href="#faq" 
+                href="#faq"
+                onClick={(e) => handleNavClick(e, 'faq')}
                 className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
               >
                 FAQ
+              </a>
+              <a 
+                href="/datenschutz"
+                onClick={(e) => {
+                  e.preventDefault()
+                  window.location.href = '/datenschutz'
+                }}
+                className="text-neutral-n700 hover:text-neutral-n1000 px-3 py-2 text-sm font-medium transition-colors duration-200"
+              >
+                Datenschutz
               </a>
             </div>
           </div>
@@ -142,9 +175,38 @@ const Navigation = () => {
       {menuOpen && (
         <div className="md:hidden border-t border-neutral-n200 bg-neutral-n0">
           <div className="px-4 py-3 space-y-2">
-            <a href="#how-it-works" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900">Unsere Lösung</a>
-            <a href="#features" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900">Funktionalitäten</a>
-            <a href="#faq" onClick={() => setMenuOpen(false)} className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900">FAQ</a>
+            <a 
+              href="#how-it-works" 
+              onClick={(e) => { handleNavClick(e, 'how-it-works'); setMenuOpen(false) }} 
+              className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
+            >
+              Unsere Lösung
+            </a>
+            <a 
+              href="#features" 
+              onClick={(e) => { handleNavClick(e, 'features'); setMenuOpen(false) }} 
+              className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
+            >
+              Funktionalitäten
+            </a>
+            <a 
+              href="#faq" 
+              onClick={(e) => { handleNavClick(e, 'faq'); setMenuOpen(false) }} 
+              className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
+            >
+              FAQ
+            </a>
+            <a 
+              href="/datenschutz" 
+              onClick={(e) => { 
+                e.preventDefault()
+                window.location.href = '/datenschutz'
+                setMenuOpen(false) 
+              }} 
+              className="block px-3 py-2 rounded-lg hover:bg-neutral-n100 text-neutral-n900"
+            >
+              Datenschutz
+            </a>
             <button
               onClick={() => { setMenuOpen(false); openModal() }}
               disabled={hasRequested}

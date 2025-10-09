@@ -1,8 +1,15 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import AISpark from '../assets/AI.svg'
 
 const FAQSection = () => {
   const [openFAQ, setOpenFAQ] = useState(-1)
+  
+  const handleDatenschutzClick = (e) => {
+    e.preventDefault()
+    // Navigate to datenschutz page and scroll to top
+    window.location.href = '/datenschutz'
+  }
 
   const faqs = [
     {
@@ -15,7 +22,8 @@ const FAQSection = () => {
     },
     {
       question: "Sind meine Daten sicher?",
-      answer: "Ja, Drafto nutzt Microsoft Azure als Fundament für Datenschutz und Compliance. Mit EU Data Boundary, Privacy-by-Design, Azure OpenAI DataZone und umfassenden Betroffenenrechten wird DSGVO-Konformität im Kanzlei-Tagesbetrieb gewährleistet."
+      answer: "Ja, Drafto nutzt Microsoft Azure als Fundament für Datenschutz und Compliance. Mit EU Data Boundary, Privacy-by-Design, Azure OpenAI DataZone und umfassenden Betroffenenrechten wird DSGVO-Konformität im Kanzlei-Tagesbetrieb gewährleistet.",
+      hasLink: true
     },
     {
       question: "Wie kann ich Drafto integrieren?",
@@ -80,9 +88,23 @@ const FAQSection = () => {
                 </div>
                 {openFAQ === index && (
                   <div className="box-border content-stretch flex gap-[10px] items-start pb-[var(--stack-xl,20px)] pl-0 pr-[var(--inline-xl,20px)] pt-0 relative shrink-0 w-full">
-                    <p className="flex-[1_0_0] font-inter font-normal leading-[1.6] min-h-px min-w-px not-italic relative shrink-0 text-[16px] text-neutral-n800 whitespace-pre-wrap text-justify">
-                      {faq.answer}
-                    </p>
+                    <div className="flex-[1_0_0] flex flex-col gap-3">
+                      <p className="font-inter font-normal leading-[1.6] min-h-px min-w-px not-italic relative shrink-0 text-[16px] text-neutral-n800 whitespace-pre-wrap text-justify">
+                        {faq.answer}
+                      </p>
+                      {faq.hasLink && (
+                        <a 
+                          href="/datenschutz" 
+                          onClick={handleDatenschutzClick}
+                          className="inline-flex items-center gap-2 text-primary-pr600 hover:text-primary-pr700 font-medium text-[16px] transition-colors duration-200"
+                        >
+                          Hier sehen Sie mehr über den Datenschutz
+                          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                          </svg>
+                        </a>
+                      )}
+                    </div>
                   </div>
                 )}
               </div>

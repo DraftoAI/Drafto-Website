@@ -1,10 +1,19 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import ImgVorlagenerstellung from '../assets/Vorlagentest.png'
 import ImgDokumentenerstellung from '../assets/Dokumentenerstellung_final.png'
 import ImgDokumenteneditor from '../assets/Dokumenteneditor_final.png'
 import ImgDatenschutz from '../assets/Datenschutz.png'
 
 const FeaturesSection = () => {
+  const location = useLocation()
+  
+  const handleDatenschutzClick = (e) => {
+    e.preventDefault()
+    // Navigate to datenschutz page and scroll to top
+    window.location.href = '/datenschutz'
+  }
+  
   return (
     <div
       id="features"
@@ -91,6 +100,18 @@ const FeaturesSection = () => {
             Die Verarbeitung findet ausschließlich in europaischen Microsoft-Azure-Rechenzentren statt. 
             Alle Daten sind verschlüsselt und der Zugriff ist streng rollenbasiert.
             </p>
+            <div className="mt-4">
+              <a 
+                href="/datenschutz" 
+                onClick={handleDatenschutzClick}
+                className="inline-flex items-center gap-2 text-primary-pr600 hover:text-primary-pr700 font-medium text-[16px] transition-colors duration-200"
+              >
+                Hier sehen Sie mehr über den Datenschutz
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+            </div>
           </div>
           <div className="flex justify-center order-1 lg:order-2">
             <div className="bg-gradient-to-br from-primary-pr500 to-primary-pr600 rounded-2xl flex items-center justify-center overflow-hidden w-full max-w-[520px] min-h-[280px]">
