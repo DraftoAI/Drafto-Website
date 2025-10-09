@@ -116,23 +116,23 @@ function DSGVOTooltip({ article, children }) {
 
 function PrivacyCard({ title, description, azureFeatures, dsgvoReferences, IconComponent }) {
   return (
-    <div className="bg-white rounded-2xl p-8 shadow-lg border border-neutral-n200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+    <div className="bg-white rounded-2xl p-8 shadow-lg border border-neutral-n200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1 overflow-hidden">
       <div className="flex items-start gap-4 mb-6">
-        <div className="bg-gradient-to-br from-primary-pr50 to-primary-pr100 text-primary-pr600 p-3 rounded-xl flex items-center justify-center border border-primary-pr200 min-w-12 min-h-12">
+        <div className="bg-gradient-to-br from-primary-pr50 to-primary-pr100 text-primary-pr600 p-3 rounded-xl flex items-center justify-center border border-primary-pr200 min-w-12 min-h-12 flex-shrink-0">
           <IconComponent className="text-xl" />
         </div>
-        <h3 className="text-xl font-bold text-neutral-n1000 leading-tight">{title}</h3>
+        <h3 className="text-xl font-bold text-neutral-n1000 leading-tight break-words">{title}</h3>
       </div>
       
-      <p className="text-neutral-n800 leading-relaxed mb-6">{description}</p>
+      <p className="text-neutral-n800 leading-relaxed mb-6 break-words">{description}</p>
       
       <div className="mb-6">
         <h4 className="text-lg font-semibold text-primary-pr600 mb-3">Azure-Implementierung:</h4>
         <ul className="space-y-2">
           {azureFeatures.map((feature, index) => (
             <li key={index} className="flex items-start gap-2 text-sm text-neutral-n700">
-              <span className="text-primary-pr600 font-bold mt-0.5">✓</span>
-              {feature}
+              <span className="text-primary-pr600 font-bold mt-0.5 flex-shrink-0">✓</span>
+              <span className="break-words">{feature}</span>
             </li>
           ))}
         </ul>
@@ -157,7 +157,7 @@ const DatenschutzPage = () => {
       title: "Rechtmäßigkeit und Auftragsverarbeitung",
       cards: [
         {
-          title: "Auftragsverarbeitungsvertrag (AVV)",
+          title: "Auftragsverarbeitungs­vertrag (AVV)",
           description: "Klare vertragliche Regelungen zwischen Kanzlei und Anbieter sowie Microsoft als Unterauftragsverarbeiter.",
           azureFeatures: [
             "Microsoft Data Protection Addendum (DPA) mit EU-Standardvertragsklauseln",
