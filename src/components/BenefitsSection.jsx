@@ -4,7 +4,7 @@ const BenefitsSection = () => {
   return (
     <div
       id="benefits"
-      className="bg-gradient-to-br from-primary-pr50 to-primary-pr100 flex flex-col items-center w-full max-w-[1440px] px-6 md:px-10 lg:px-12 py-20 md:py-24 lg:py-28 gap-16"
+      className="bg-gradient-to-br from-primary-pr50 to-primary-pr100 flex flex-col items-center w-full max-w-[1440px] px-6 md:px-10 lg:px-12 pt-16 md:pt-20 lg:pt-24 pb-12 md:pb-14 lg:pb-16 gap-10"
     >
       {/* Header */}
       <div className="text-center max-w-[620px]">
@@ -16,8 +16,9 @@ const BenefitsSection = () => {
         </p>
       </div>
 
-      {/* Benefits Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-[1200px]">
+      {/* Benefits Grid + Hinweis */}
+      <div className="flex flex-col gap-3 w-full max-w-[1200px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
         
         {/* Zeitersparnis */}
         <div className="bg-white rounded-2xl p-8 shadow-lg border border-neutral-n200 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
@@ -31,18 +32,7 @@ const BenefitsSection = () => {
               Zeitersparnis
             </h3>
             <div className="mb-4">
-              <div className="text-[48px] font-bold text-primary-pr600 mb-2">89%</div>
-              <div className="text-neutral-n800 text-[16px]">
-                Weniger Zeit für Dokumentenerstellung
-              </div>
-            </div>
-            <div className="text-neutral-n700 text-[14px] leading-relaxed">
-              <div className="mb-2">
-                <span className="font-semibold">Vorher:</span> 45 Minuten pro Vertrag
-              </div>
-              <div>
-                <span className="font-semibold">Mit Drafto:</span> 5 Minuten pro Vertrag
-              </div>
+              <div className="text-[48px] font-bold text-primary-pr600 mb-2">87%</div>
             </div>
           </div>
         </div>
@@ -55,19 +45,9 @@ const BenefitsSection = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 className="font-dm-sans font-bold text-[24px] text-neutral-n1000 mb-4">
-              Fehlerreduktion
-            </h3>
+            <h3 className="font-dm-sans font-bold text-[24px] text-neutral-n1000 mb-4">Weniger Eingaben</h3>
             <div className="mb-4">
-              <div className="text-[48px] font-bold text-primary-pr600 mb-2">95%</div>
-              <div className="text-neutral-n800 text-[16px]">
-                Weniger Tippfehler in Dokumenten
-              </div>
-            </div>
-            <div className="text-neutral-n700 text-[14px] leading-relaxed">
-              <div className="mb-2">
-                <span className="font-semibold">Automatische:</span> Platzhalter-Befüllung und Rechtschreibprüfung
-              </div>
+              <div className="text-[48px] font-bold text-primary-pr600 mb-2">78%</div>
             </div>
           </div>
         </div>
@@ -81,25 +61,19 @@ const BenefitsSection = () => {
               </svg>
             </div>
             <h3 className="font-dm-sans font-bold text-[24px] text-neutral-n1000 mb-4">
-              Produktivität
+              Tippfehler im Prozess
             </h3>
             <div className="mb-4">
-              <div className="text-[48px] font-bold text-primary-pr600 mb-2">8x</div>
-              <div className="text-neutral-n800 text-[16px]">
-                Mehr Dokumente pro Stunde
-              </div>
-            </div>
-            <div className="text-neutral-n700 text-[14px] leading-relaxed">
-              <div className="mb-2">
-                <span className="font-semibold">Vorher:</span> 1,3 Dokumente/Stunde
-              </div>
-              <div>
-                <span className="font-semibold">Mit Drafto:</span> 12 Dokumente/Stunde
-              </div>
+              <div className="text-[48px] font-bold text-primary-pr600 mb-2">0</div>
             </div>
           </div>
         </div>
 
+      </div>
+
+      <p className="text-left text-neutral-n600 text-[14px] italic max-w-[1200px] w-full">
+        * Basiert auf einer Messung mit 10 Probanden, in der ein Onboarding eines neuen Kunden simuliert wurde.
+      </p>
       </div>
     </div>
   )
